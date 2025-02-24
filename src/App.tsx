@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import { Question } from './components/question';
 import { Button } from './components/ui/button';
 import Header from './components/ui/header';
@@ -12,7 +13,7 @@ const App = () => {
           Test your knowledge of COA before the final
         </h1>
         <Button className='my-6'>
-          <a href='/quiz'> Go to quiz </a>
+          <Link to={'/quiz'}> Go to quiz </Link>
         </Button>
         <hr className='w-full mb-4' />
         <div className='p-4 max-w-2xl  bg-white rounded-2xl border'>
